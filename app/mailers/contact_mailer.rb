@@ -2,7 +2,7 @@ class ContactMailer < ApplicationMailer
 
     def contact(user)
         @user = user
-        mail(to: 'contact@gmail.com', subject:"no")
+        mail(to: @user.email, subject:"登録完了")
     end
 
 end
